@@ -72,7 +72,7 @@ public class EPDiffGetter {
 				{	
 					//System.out.println("\nlPattern[count] before internal noise: "+lPattern.get(count));
 					Float lNoise = new Float(r.nextGaussian()*iSP.getInternalNoise());
-					System.out.println("lNoise: "+lNoise);
+					//System.out.println("lNoise: "+lNoise);
 
 					lPattern.set(count, (lPattern.get(count)+lNoise));
 					//System.out.println("\nlPattern[count] after internal noise: "+lPattern.get(count));
@@ -87,10 +87,8 @@ public class EPDiffGetter {
 		}
 
 
-		//now the 4 ex levels are in lLevels, and the frequencies to which these levels correspond are in lFreqs
-		//print everything out just to check
-		
-
+		//now the 4 ex levels are in lLevels, and the frequencies to which these levels correspond are in lFreqs		
+/*
  		System.out.println("\n\nFREQUENCIES");
 
 		for (int li=0; li<lFreqs.size(); li++)
@@ -113,7 +111,7 @@ public class EPDiffGetter {
 			ArrayList<Float> tempLevels = lLevels.get(1);
 			System.out.println(""+tempLevels.get(li));
 		}
-/*
+
 		System.out.println("\n\nEX PATTERN 3");
 		for (int li=0; li<(lLevels.get(2)).size(); li++)
 		{

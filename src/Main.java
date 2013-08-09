@@ -75,19 +75,11 @@ public class Main {
 
 				if (!fileMoved)
 				{
-					System.out.println("File "+resultsPathPre+" not moved to "+resultsPathPost);
+					System.out.println("\n\nFile "+resultsPathPre+" not moved to "+resultsPathPost);
 				}
 
 				// success!
-				System.out.println("\n\nEverything has worked! Yay!\n\n" +
-						"If you are running this via JobClient, and the name of the results file\n" +
-						" doesn't come up below (give it a minute), this run is broken, so kill it\n" +
-						" and restart DoIt.bat with or without fishing through your temp files to \n" +
-						"find the offending results file and emailing it to hmw43 at cam...\n" +
-						"(it's in %temp%\\JobClient*, maybe in \\results).\n\n" +
-						"If you are not running this via JobClient, the results file will be \n" +
-						"in <your eclipse project folder>/results, unless there is a message \n" +
-						"above 'Everything has worked' to say that it isn't.");
+				System.out.println("\n\nEverything has worked!\n\n");
 			}
 		} 
 		catch (Exception e) 

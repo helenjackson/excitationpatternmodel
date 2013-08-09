@@ -30,7 +30,7 @@ public class SignalGenerator {
 		String NoiseType = "TEN_SPL";
 
 
-		Olek_Mad abomination = new Olek_Mad();
+		TFS1_class abomination = new TFS1_class();
 
 		if(isTemplate)
 		{
